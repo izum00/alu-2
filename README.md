@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="https://github.com/titaniumnetwork-dev/Alu/assets/99224452/d740378b-3fba-4470-8f06-3eefdae8a313" alt="AluLogo" width="250"/>
+</p>
 
-## Getting Started
+# Alu
 
-First, run the development server:
+Alu is a beautiful, functional, and sleek web proxy that prioritizes customization and ease of use.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Code size](https://shields.io/github/languages/code-size/titaniumnetwork-dev/Alu?style=flat-square&logo=github)
+![Star count](https://shields.io/github/stars/titaniumnetwork-dev/Alu?style=flat-square&logo=github)
+![Made with coffee](https://img.shields.io/badge/made%20with-coffee-452515?style=flat-square&logo=coffeescript)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🌐 UV and Rammerhead support
+- 🎨 Multiple Themes to choose from
+- 🏬 Marketplace for Themes and Extensions
+- 🕶 Multiple site cloaking options
+- 🎮 50+ Games to choose from
+- 🌎 Support for **6** Languages
+- 🚀 High performance
+- 🔍 Multiple Search Engines to pick from
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Deploying Alu
 
-## Learn More
+Deploying Alu is about as simple as it gets.
 
-To learn more about Next.js, take a look at the following resources:
+1. Open your terminal and type `git clone https://github.com/titaniumnetwork-dev/Alu --recurse-submodules`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install pnpm with `npm i -g pnpm`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Then simply run `pnpm i` to install all node_modules, and build the frontend with `pnpm run build`; this shouldn't take more than a couple seconds.
 
-## Deploy on Vercel
+4. Finally, run `pnpm start` to actually serve Alu! It defaults to port 3000 for everything, but this can be specified in an env file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Congrats! You should now be running your very own instance of Alu! 🎉
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> [!WARNING]
+> Recursing all submodules will install [alu-games](https://github.com/wearrrrr/alu-games) as well. This repo contains _all_ games for Alu and is quite large! If you wish to skip it, simply remove `--recurse-submodules` from your clone command.
+
+## What about Docker?
+
+Alu can be easily dockerized with the `Dockerfile` provided in the repository. Simply run `docker build -t alu .` to build the image, and then `docker run -p 3000:3000 alu` to run the container, and you're good to go!
+
+# Technologies
+
+- Ultraviolet by Titanium Network
+- Bare Server from TompHTTP
+- Wisp Server Node by Mercury Workshop
+- Rammerhead by binary-person
+- Astro from astro.build
+- Typescript
+- ExpressJS
+- Prettier
+- ESLint
+
+# License
+
+Alu is licensed under the GNU GPL v3.0 License as of 2/9/2024.
